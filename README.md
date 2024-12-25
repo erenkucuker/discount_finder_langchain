@@ -1,12 +1,14 @@
-# 🛍️ AI Shopping Assistant & Coupon Finder
+# 🛍️ AI Shopping Assistant & Coupon Finder Agent
 
-> ⚠️ *Important Notice*: This project is only for educational purposes and does not aim to be used in production.
+> ⚠️ *Important Notice*: This project is not intended for production use.
+
 
 
 
 ## 📋 Overview
+It uses Plan & Execute Agent Architecture. Specifically chosen for handling complex task like finding coupons without losing the context.
 
-An AI agent Extension coupon finder system that uses AI and web scraping to automatically discover and validate coupon codes for online shopping. The project consists of a Python backend API using LangChain and a browser extension for the frontend.
+![llm-compiler](https://blog.langchain.dev/content/images/size/w1600/2024/02/llm-compiler-1.png)
 
 
 ## 📝 Criticism & Limitations
@@ -31,15 +33,28 @@ The Chrome extension uses:
 - 💻 JavaScript (no framework)
 - 🔄 Webextension-Polyfill for All Browsers
 
-## ✨ Features
+## 📖 Usage
 
-### 🔍 Intelligent Coupon Discovery
-- Web scraping from popular coupon websites
-- Image analysis using OCR to find coupon codes in images
-- AI-powered text analysis to extract valid coupon codes
+### 🎯 Basic Usage
 
-### 🤖 AI-Powered Validation
-- Detecting right fields and testing coupon codes automatically to find valid and best coupon codes
+1. **🔄 Automatic Detection**
+   - Visit any e-commerce website
+   - The extension automatically detects shopping-related pages
+   - Works on popular platforms like Amazon, eBay, Walmart, and many others
+
+2. **🔍 Finding Coupons**
+   - When you're on a cart or checkout page, the extension will:
+     - Automatically search for available coupons
+     - Show a notification if coupons are found
+     - Display the number of available coupons
+
+3. **💳 Applying Coupons**
+   - Click "Yes, try coupons" in the notification
+   - The extension will:
+     - Automatically locate the coupon input field
+     - Test each coupon code sequentially
+     - Stop when it finds a working coupon
+     - Show results via toast notifications
 
 ## 🚀 Installation
 
@@ -75,28 +90,7 @@ poetry run dev
    - Click "Load unpacked"
    - Select the `extension` directory
 
-## 📖 Usage
 
-### 🎯 Basic Usage
-
-1. **🔄 Automatic Detection**
-   - Visit any e-commerce website
-   - The extension automatically detects shopping-related pages
-   - Works on popular platforms like Amazon, eBay, Walmart, and many others
-
-2. **🔍 Finding Coupons**
-   - When you're on a cart or checkout page, the extension will:
-     - Automatically search for available coupons
-     - Show a notification if coupons are found
-     - Display the number of available coupons
-
-3. **💳 Applying Coupons**
-   - Click "Yes, try coupons" in the notification
-   - The extension will:
-     - Automatically locate the coupon input field
-     - Test each coupon code sequentially
-     - Stop when it finds a working coupon
-     - Show results via toast notifications
 
 ## 📁 Project Structure
 
