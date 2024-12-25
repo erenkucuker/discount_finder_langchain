@@ -1,0 +1,117 @@
+.toast-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.toast {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 300px;
+  max-width: 400px;
+  padding: 16px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  animation: slideIn 0.3s ease-out;
+}
+
+.toast.success {
+  border-left: 4px solid #28a745;
+}
+
+.toast.info {
+  border-left: 4px solid #1a73e8;
+}
+
+.toast.error {
+  border-left: 4px solid #dc3545;
+}
+
+.toast-content {
+  flex-grow: 1;
+  margin-right: 12px;
+}
+
+.toast-title {
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #212529;
+}
+
+.toast-message {
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.toast-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.toast-button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.toast-button.primary {
+  background-color: #1a73e8;
+  color: white;
+}
+
+.toast-button.primary:hover {
+  background-color: #1557b0;
+}
+
+.toast-button.secondary {
+  background-color: #e9ecef;
+  color: #495057;
+}
+
+.toast-button.secondary:hover {
+  background-color: #dee2e6;
+}
+
+.toast-close {
+  background: none;
+  border: none;
+  color: #adb5bd;
+  cursor: pointer;
+  padding: 4px;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.toast-close:hover {
+  color: #6c757d;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}

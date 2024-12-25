@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "discount_finder_langchain"
+version = "0.1.0"
+description = "A LangChain-based agent project"
+authors = ["Eren Kucuker <info@erenkucuker.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+langchain = "^0.3.13"
+openai = "^1.6.1"
+python-dotenv = "^1.0.0"
+fastapi = {extras = ["standard"], version = "^0.115.6"}
+uvicorn = "^0.25.0"
+requests = "^2.31.0"
+beautifulsoup4 = "^4.12.2"
+opencv-python = "^4.9.0.80"
+numpy = "^1.26.3"
+easyocr = "^1.7.1"
+aiohttp = "^3.9.1"
+torch = "^2.1.2"
+pydantic = "^2.5.3"
+langchain-openai = "^0.2.0"
+langgraph = "^0.2.60"
+langchain-community = "^0.3.13"
+langchain-experimental = "^0.3.4"
+faiss-cpu = "^1.9.0.post1"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+dev = "discount_finder_langchain.api:main"

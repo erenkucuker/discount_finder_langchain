@@ -1,0 +1,82 @@
+# Python & API specific
+api/**/__pycache__/
+api/**/*.py[cod]
+api/**/*.so
+api/dist/
+api/build/
+api/**/*.egg-info/
+api/**/*.egg
+api/discount_finder_langchain/**/__pycache__/
+api/discount_finder_langchain/**/*.py[cod]
+api/discount_finder_langchain/logs/
+api/discount_finder_langchain/**/*.log
+
+# Virtual Environment
+api/.env
+api/.venv/
+api/env/
+api/venv/
+api/ENV/
+api/.python-version
+
+# Poetry
+api/poetry.lock
+api/.poetry/
+
+# Testing and Coverage
+api/.coverage
+api/coverage.xml
+api/.pytest_cache/
+api/.tox/
+api/htmlcov/
+api/.hypothesis/
+api/.mypy_cache/
+api/.ruff_cache/
+
+# Extension specific
+extension/node_modules/
+extension/dist/
+extension/build/
+extension/*.zip
+extension/*.crx
+extension/*.pem
+extension/*.xpi
+extension/manifest.json.bak
+extension/debug.log
+extension/debug/
+extension/.env*
+extension/coverage/
+extension/.nyc_output/
+extension/test-results/
+
+# IDE and Editor files
+.idea/
+.vscode/
+**/*.swp
+**/*.swo
+**/*.sublime-workspace
+**/*.sublime-project
+.settings/
+
+# Logs
+**/logs/
+**/*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Temporary files
+**/.tmp/
+**/.temp/
+**/*.bak
+**/*~
+
+# Operating System
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="64" cy="64" r="60" fill="#1a73e8"/>
+
+  <!-- Shopping Bag -->
+  <path d="M40 48V40C40 31.2 47.2 24 56 24H72C80.8 24 88 31.2 88 40V48H96C100.4 48 104 51.6 104 56V88C104 92.4 100.4 96 96 96H32C27.6 96 24 92.4 24 88V56C24 51.6 27.6 48 32 48H40ZM48 48H80V40C80 35.6 76.4 32 72 32H56C51.6 32 48 35.6 48 40V48Z" fill="white"/>
+
+  <!-- Percentage Sign -->
+  <path d="M52 64L76 84M52 84L76 64M56 64C56 66.2091 54.2091 68 52 68C49.7909 68 48 66.2091 48 64C48 61.7909 49.7909 60 52 60C54.2091 60 56 61.7909 56 64ZM80 84C80 86.2091 78.2091 88 76 88C73.7909 88 72 86.2091 72 84C72 81.7909 73.7909 80 76 80C78.2091 80 80 81.7909 80 84Z" stroke="white" stroke-width="4" stroke-linecap="round"/>
+</svg>
