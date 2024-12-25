@@ -2,7 +2,9 @@
 
 > ⚠️ *Important Notice*: This project is not intended for production use.
 
-
+<div align="center">
+  <img src="images/extension.jpeg" alt="Extension Screenshot" width="600"/>
+</div>
 
 
 ## 📋 Overview
