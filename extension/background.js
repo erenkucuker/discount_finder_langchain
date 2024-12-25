@@ -141,7 +141,6 @@ const ECOMMERCE_PATTERNS = [
   'bestbuy',
   'costco',
   'shopify',
-  'boutiquerugs'
 ];
 
 // Check if URL matches ecommerce patterns
